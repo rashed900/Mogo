@@ -1,0 +1,517 @@
+/**********************************************************
+*  	Theme Name:  MOGO
+*	Theme URI: http://
+*	Description:  Single page web template
+*	Author: European IT
+*	Author URI: 
+*	Version: 1.0        
+*
+***********************************************************/
+
+/**********************************************************
+*******************  CSS TABLE OF CONTENT   ***************
+*
+*   1. GLOBAL AREA 
+*  
+*           HOME PAGE:
+*   2. HEADER SECTION 
+
+**************************************************************/
+
+/*************************************************************
+****************** START GLOABAL AREA CSS ********************
+**************************************************************/
+*{
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color:#999999;
+}
+/* fonts */
+@font-face {
+    font-family: 'Kaushan Script';
+    src: url('../fonts/KaushanScript-Regular.eot');
+    src: url('../fonts/KaushanScript-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/KaushanScript-Regular.woff2') format('woff2'),
+        url('../fonts/KaushanScript-Regular.woff') format('woff'),
+        url('../fonts/KaushanScript-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+/* fonts */
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    text-decoration: none;
+}
+h1 {
+	font-size: 79px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	line-height: 74px;
+	text-transform: uppercase;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+h3 {
+	font-family: 'Kaushan Script';
+	font-weight: 400;
+	font-size: 50px;
+	color: #fff;
+	margin-bottom: 21px;
+}
+h4{
+    font-family: 'Kaushan Script';
+    font-weight: 400;
+    font-size: 24px;
+}
+h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+h6 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	color: #333333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.section-padding{
+    padding: 90px 0 !important;
+}
+.section-title{
+    position: relative;
+    z-index: 99;
+}
+.section-title h2 {
+	text-transform: uppercase;
+	color: #333333;
+	position: relative;
+	padding-bottom: 40px;
+	margin-bottom: 40px;
+}
+.section-title h2::after {
+	position: absolute;
+	content: "";
+	width: 70px;
+	height: 3px;
+	background-color: #ff9999;
+	left: 50%;
+    transform: translateX(-50%);
+    bottom:0;
+}
+.section-title h4 {
+	color: #333333;
+	font-size: 24px;
+	padding-bottom: 12px;
+}
+.section-title p {
+    max-width: 944px;
+    margin: 0 auto;
+}
+.pt-90{
+	padding-top:90px !important;
+}
+.mt-90{
+	margin-top:90px !important;
+}
+/*************************************************************
+******************** END GLOABAL AREA CSS ********************
+**************************************************************/
+
+/*************************************************************
+********************   START HEADER SECTION ******************
+**************************************************************/
+.header-section{
+    background-image: url(../images/header/header-bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+.header-inner{
+    position: relative;
+    background: linear-gradient(180deg, rgba(244,140,131,.9) 0%, rgba(252,227,137,.9) 100%);
+}
+.header-section .navbar .navbar-brand {
+	font-size: 25px;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 700 !important;
+}
+.navbar{
+    padding-top:20px !important;
+}
+.navbar .nav-link {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	margin-left: 28px;
+	border-bottom: 2px solid transparent !important;
+    color: #fff !important;
+    transition:.5s all;
+}
+.navbar .nav-link:hover{
+    color:#ffcc99 !important;
+    border-bottom:2px solid #ffcc99 !important;
+}
+.carousel-inner {
+	padding: 80px 0 174px 0;
+}
+.carousel-item-inner h1{
+    margin-bottom:70px !important;
+}
+.carousel-item-inner a {
+	color: #fff;
+	padding: 10px 31px;
+	border: 3px solid #fff;
+	font-size: 14px;
+	font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+.carousel-item-inner a::before {
+	content: "";
+	position: absolute;
+	width: 60px;
+	height: 3px;
+	left: 50%;
+	top: -35px !important;
+	transform: translateX(-50%);
+	background: #fff;
+}
+.carousel-indicators {
+    padding-bottom:28px !important;
+	padding-left: 0;
+	margin-right: 0%;
+	margin-left: 0%;
+}
+.carousel-indicators li {
+	width: 28%;
+    margin-right: 30px;
+    text-indent: initial !important;
+    position:relative;
+}
+.carousel-indicators li:nth-child(1)::after {
+	content: "";
+	position: absolute;
+	width: 57px;
+	height: 3px;
+	background-color: #ff9999 !important;
+	left: 0;
+    top: 0px;
+    transition:.5s all;
+}
+.carousel-indicators li:nth-child(3)::after, .carousel-indicators li:nth-child(2)::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 3px;
+	background-color: #ff9999 !important;
+	left: 0;
+    top: 0px;
+    transition:.5s all;
+}
+.carousel-indicators li:nth-child(3)::after, .carousel-indicators li:nth-child(2)::after, .carousel-indicators li:nth-child(4)::after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	height: 3px;
+	background-color: #ff9999 !important;
+	left: 0;
+    top: 0px;
+    transition:.5s all;
+}
+.carousel-indicators li:hover:nth-child(1)::after{
+    width:100% !important;
+}
+.carousel-indicators li:hover:nth-child(3)::after, .carousel-indicators li:hover:nth-child(2)::after, .carousel-indicators li:hover:nth-child(4)::after{
+    width:100% !important;
+}
+.carousel-indicators h5 {
+	color: #fff !important;
+	text-transform: uppercase;
+	font-size: 16px !important;
+	font-weight: 400 !important;
+	padding-top: 10px;
+}
+.carousel-indicators h5 span {
+	font-weight: 700;
+	font-size: 22px;
+}
+/*************************************************************
+*******************     END HEADER SECTION  ******************
+**************************************************************/
+
+/*************************************************************
+*******************   START ABOUT  SECTION  ******************
+**************************************************************/
+.about-single-item{
+    position: relative;
+    overflow: hidden;
+    transition:.3s all;
+}
+.about-single-item:hover{
+    box-shadow: 10px 10px #99cccc;
+}
+.about-single-item img{
+    width:100%;
+}
+.about-single-item .about-item-overlay {
+	position: absolute;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(244,140,131,.9) 0%, rgba(252,227,137,.9) 100%);
+	height: 100%;
+	text-align: center;
+	padding-top: 83px;
+	color: #fff;
+    transition: .3s all !important;
+    top:100%;
+    left:0;
+}
+.about-single-item .about-item-overlay .about-item-overlay-icon i {
+	font-size: 28px;
+}
+.about-single-item .about-item-overlay .about-item-overlay-text h6 {
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-top: 7px;
+}
+
+.about-single-item:hover .about-item-overlay{
+    top:0;
+    transition:.3s all !important;
+}
+.pt-90{
+    padding-top:90px !important;
+}
+
+/*************************************************************
+*******************   END ABOUT  SECTION    ******************
+**************************************************************/
+
+/*************************************************************
+*******************   START COUNTER  SECTION   ***************
+**************************************************************/
+.counterup-section{
+    background-color: #99cccc;
+}
+.counter-up {
+	border-left: 1px solid #fff;
+	padding: 54px 0px;
+	box-sizing: border-box;
+}
+.border-right{
+    border-right:1px solid #fff;
+}
+.counterup-section .counter-up span {
+	font-size: 70px;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif !important;
+	font-weight: 900;
+}
+.counterup-section .counter-up p{
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+    font-size: 14px;
+    color:#fff;
+    text-transform: uppercase;
+}
+.last-border{
+    border-right:1px solid #fff;
+}
+/*************************************************************
+*******************   END COUNTER  SECTION     ***************
+**************************************************************/
+
+/*************************************************************
+*******************   START SERVICES  SECTION   **************
+**************************************************************/
+.single-service .single-service-icon{
+   
+}
+.single-service .single-service-icon i{
+    color:#95e1d3;
+    font-size: 28px;
+ }
+ .single-service-text {
+	padding: 0 0 0 16px;
+}
+ .single-service-text h6 {
+	margin-bottom: 10px;
+}
+.service-top {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 50px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+/*************************************************************
+*******************   END SERVICES  SECTION     **************
+**************************************************************/
+
+/*************************************************************
+*******************   START UNIQUE DESIGN  SECTION  **********
+**************************************************************/
+.unique-design-section{
+    width: 100%;
+    background-image: url(../images/unique-design/unique-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 0 !important;
+}
+.unique-design-section::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #fffffff7;
+	opacity: .8;
+}
+.unique-design{
+    position: relative;
+    z-index: 99
+}
+.unique-design img {
+    margin-bottom: -52px;
+}
+/*************************************************************
+*******************   END UNIQUE DESIGN  SECTION  ************
+
+/*************************************************************
+*******************   START WHAT WE DO  SECTION  *************
+**************************************************************/
+.what-we-do-section{}
+.what-we-do-section .card-header{
+	position: relative;
+	border:none;
+	background-color: #fff !important;
+}
+.what-we-do-section .card-header h6 a{
+	color: #333333 !important; 
+}
+.what-we-do-section .card{
+	border:1px solid #dddddd !important;
+	margin-bottom: 8px !important;
+	border-radius: 0px !important;
+}	
+.what-we-do-section .card .card-body{
+	border-top:1px solid #dddddd !important;
+}
+.what-we-do-section .card .card-body p {
+	font-style: italic !important;
+	font-size: 14px;
+	font-weight: 400 !important;
+	line-height: 23px;
+	height: 132px;
+}
+.what-we-do-section .card-header::after {
+	content: "\f107";
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	font-family: "Font Awesome 5 free";
+	font-weight: 900;
+	right: -2px;
+	top: 6px;
+	font-size: 22px;
+}
+.what-we-do-section .custom-icon.show::after {
+	content: "\f106";
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	font-family: "Font Awesome 5 free";
+	font-weight: 900;
+	right: 8px;
+	top: 6px;
+	font-size: 22px;
+	background-color: #fff !important;
+}
+/* scrollbar */
+.mCSB_scrollTools .mCSB_draggerRail {
+	width: 4px !important;
+}
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #31acac;
+	height: 80px;
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+	background-color: #31acac;
+	filter: "alpha(opacity=85)";
+	-ms-filter: "alpha(opacity=85)";
+}
+/*************************************************************
+*******************   END WHAT WE DO  SECTION    *************
+**************************************************************/
+
+/*************************************************************
+*******************  START  CLIENT FEADBACK  SECTION  ********
+**************************************************************/
+.feadback-text{
+	padding-left:65px;
+}
+.feadback-text P{
+	line-height: 26px;
+	font-style: italic;
+}
+.feadback-text h4 {
+	position: relative;
+	padding-left: 80px;
+	color: #333333 !important;
+	margin-top: 12px;
+}
+.feadback-text h4::before {
+	content: "";
+	width: 60px;
+	position: absolute;
+	height: 3px;
+	background: #ff9999;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/*************************************************************
+*******************   END CLIENT FEADBACK  SECTION   *********
+**************************************************************/
+
+/*************************************************************
+*************	   START FOOTER SECTION	    	**************
+**************************************************************/
+/*************************************************************
+*************	   END FOOTER SECTION	    	**************
+**************************************************************/

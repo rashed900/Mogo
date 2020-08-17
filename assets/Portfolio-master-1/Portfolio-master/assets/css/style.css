@@ -1,0 +1,920 @@
+/*------------------------------------------------------- 
+    Theme Name: Personala
+	Theme URI: http://
+	Description: Personal web template 
+	Author: Akjm Al-Amin
+	Author URI: 
+	Version: 1.0        
+
+----------------------------------------------------------*/
+
+
+
+/* --------------------------------------------------------
+        Start Global css
+-----------------------------------------------------------*/
+*{  margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: none !important;
+    list-style: none;
+}
+html{
+    width:100%;
+    overflow-x: hidden;
+}
+body{
+    margin:0;
+    padding:0;
+    font-size:15px;
+    line-height:24px;
+    color:#a3a3a3;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    width:100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+a{
+    text-decoration: none !important;
+    font-weight: 600;
+}
+
+p{
+    line-height: 24px;
+    font-size: 15px;
+}
+ul{
+    margin:0;
+    padding: 0;
+    list-style:none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+    padding:0 !important;
+}
+h1{
+    font-size:60px;
+    font-weight: 400;
+    line-height: 84px;
+
+}
+h2{
+    font-size:40px;
+    font-weight: 400;
+    font-family: 'Josefin Sans',sans-serif ;
+    line-height: 48px;
+
+}
+h3 a{
+    font-size:22px;
+    font-weight: 700;
+    font-family: 'Josefin Sans',sans-serif ;
+    line-height: 26px;
+    color:#666;
+}
+h4{
+    font-size:36px;
+    font-weight: 600;
+    font-family: 'Josefin Sans',sans-serif ;
+    line-height: 43px;
+    color:#333333;
+    letter-spacing: 2px;
+
+}
+h5{
+    font-size:25px;
+    font-weight: 400;
+    font-family: 'Josefin Sans',sans-serif ;
+    line-height: 30px;
+
+}
+h6{
+    font-size:16px;
+    font-weight: 600;
+    font-family: 'Josefin Sans',sans-serif ;
+    line-height: 19px;
+
+}
+input, textarea{
+    outline:none !important;
+    border-radius: 0 !important;
+}
+img{
+    width:100%;
+}
+
+.section-padding{
+    padding: 80px 0 !important;
+}
+.section-title {
+	text-align: center;
+	margin-bottom: 60px;
+}
+.section-title h4{
+    position: relative;
+    display: inline-block;
+}
+.section-title h4::before {
+	content: "";
+	position: absolute;
+	width: 73px;
+	height: 1px;
+	background-color: #C49B66;
+	left: 50%;
+	top: 43px;
+	transform: translateX(-50%);
+}
+.section-title h4::after {
+	content: '';
+	width: 100%;
+	height: 1px;
+    background: rgba(1, 1, 1, 0.05);
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.section-title p{} 
+
+/*--------------------------------------------------------
+        End Global css
+----------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------
+        Start nav section css
+----------------------------------------------------------*/
+#sticky_navbar-sticky-wrapper{
+    height: 0 !important;
+    margin-top: 0 !important;
+}
+
+#sticky_navbar {
+	position: absolute;
+	z-index: 99 !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100%;
+	margin-top: 27px;
+	z-index: 999;
+}
+
+.is-sticky #sticky_navbar {
+	background-color: #fff;
+	margin-top: 0px;
+	z-index: 999999 !important;
+	color: #000;
+	border-bottom: 1px solid #6666662e;
+	transition: all .4s;
+	/* z-index: 9999; */
+}
+.main-menu .active{
+    color:#C49B66 !important;
+}
+.is-sticky .navbar-light .navbar-nav .nav-link{
+    color:#000 !important;
+    z-index: 9;
+}
+.is-sticky .navbar-light .navbar-nav .nav-link.active{
+    color:#C49B66 !important;
+    z-index: 9;
+}
+
+.is-sticky .navbar-brand{
+    color:#000 !important;
+}
+/*--------------------------------------------------------
+        End nav section css
+----------------------------------------------------------*/
+
+
+
+
+/*----------------------------------------------------------/
+       Start hero section css
+/*----------------------------------------------------------*/
+
+.hero-section{
+    width:100%;
+    background-image: url(../images/banner-akjm.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    position: relative;
+
+}
+#Perticle_js{
+    width:100%;
+    display: block;
+    height: 100vh;
+}
+.hero-section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #080707ad;
+	left: 0;
+	top: 0;
+}
+
+.custom-postion {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 48px;
+	z-index: 999;
+}
+.custom-postion a{
+    color:#fff !important;
+}
+
+.hero-text {
+	padding-top: 200px;
+	box-sizing: border-box;
+}
+.hero-text h1 span{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+/*--------------------------------------------------------
+        End hero section css
+----------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+        Start About section css
+----------------------------------------------------------*/
+.about-section{
+    width:100%;
+}
+.about-section .about-text-slide{
+    width:100%;
+    padding-left:10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.about-img {
+	position: relative;
+	z-index: 9;
+}
+.about-img::after{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: #C49B66;
+    left:0;
+    top:0;
+    z-index: -1;
+    transition:all .3s;
+}
+.about-img:hover::after {
+    left:-3px;
+    top:-15px;
+}
+
+.about-img img{
+    transition:all .5s;
+}
+.about-img:hover img {
+	transform: translateX(15px);
+}
+.about-text {
+    padding-left:10px;
+    box-sizing: border-box;
+}
+.about-title{
+    position: relative;
+}
+.about-title::before {
+	content: "";
+	position: absolute;
+	width: 85px;
+	height: 1px;
+	background-color: #C49B66;
+	left: 2px;
+	top: 44px;
+	z-index: 9;
+}
+.unslider-arrow.prev {
+    left: 86%;
+    bottom: 135px;
+}
+.unslider-arrow.next {
+	right: 8%;
+	bottom: 135px;
+}
+
+/* social icon */
+.social-icon {
+	margin-left: 25px;
+	margin-top: 3px;
+	margin-bottom: 51px;
+}
+.social-icon a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300 !important;
+}
+.social-icon a i {
+	font-size: 13px;
+	color: #333333;
+	height: 35px;
+	width: 35px;
+	border: 1px solid #eee;
+	line-height: 35px;
+    text-align: center;
+    margin-right:5px;
+    transition: all .5s;
+    
+  
+}
+.social-icon a:hover i{
+    background: #C49B66;
+    border-color: #C49B66;
+    color: #fff;
+}
+
+
+/* button */
+
+.about-button {
+	margin-left: 26px;
+	/* margin-top: 121px; */
+}
+.about-button .btn-1 {
+	font-size: 14px;
+	padding: 11px 27px;
+	background: #C49B66;
+	color: #fff;
+	font-weight: 700;
+}
+.about-button .btn-2 {
+	font-size: 14px;
+	padding: 11px 15px;
+	background: #C49B66;
+	color: #fff;
+	font-weight: 700;
+}
+/*--------------------------------------------------------
+        End About section css
+----------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+        Start Resume section css
+----------------------------------------------------------*/
+.resume-section{
+    width:100%;
+    background-image: url(../images/resume-bg.jpg);
+    background-size:100% 100%;
+    background-position:center;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.resume-section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #151414d6;
+}
+
+.column-3 h5, .column-2 h5, .column-1 h5{
+    position: relative;
+    display: inline-block;
+}
+.column-3 h5:before, .column-2 h5::before, .column-1 h5::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 36px;
+	width: 100%;
+	height: 1px;
+	background: rgba(255, 255, 255, 0.1);
+}
+.column-3 h5::after, .column-2 h5::after, .column-1 h5::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 36px;
+	width: 60px;
+	height: 1px;
+	background: #C49B66;
+}
+.column-1-inner h6{
+    font-family: inherit;
+}
+.column-1-inner h6{
+    font-family: inherit;
+}
+.column-1-inner{
+    margin-bottom:25px;
+}
+.column-1-inner:last-child{
+    margin-bottom:0px;
+}
+.column-1-inner:first-child{
+    margin-top:-10px;
+}
+.column-1-inner p{
+    margin-top:2px;
+}
+
+/* progressbar */
+.progress-bar-area{
+    width:100%;
+    margin-bottom:30px;
+}
+.progress-bar-area:last-child{
+    margin-bottom:0;
+}
+.progress-name h6 {
+	font-family: 'Josefin Sans',sans-serif;
+	font-size: 14px;
+}
+.progress-items{
+    width:100%;
+    height:4px;
+    background: rgba(80, 80, 80, 0.3);
+}
+.poregress-per{
+    width:0;
+    height:100%;
+    background-color: #C49B66;
+    position: relative;
+    transition:all 1.5s;
+}
+.poregress-per::before {
+	content: attr(per);
+	position: absolute;
+	background: rgba(80, 80, 80, 0.3);
+	padding: 0 0 8px 9px;
+	font-size: 10px;
+	top: -23px;
+	width: 33px;
+	height: 20px;
+	box-sizing: border-box;
+	line-height: 20px;
+	right: -17px;
+}
+
+/*--------------------------------------------------------
+        End Resume section css
+----------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+        Start services section css
+----------------------------------------------------------*/
+.services-item h6 {
+	font-size: 22px;
+	font-weight: 600;
+	color: #333;
+	margin-top: 35px !important;
+	margin-bottom: 20px;
+}
+
+.service-icon {}
+.service-icon i{
+    font-size:35px;
+    color: #C49B66;
+}
+/*--------------------------------------------------------
+        Start services section css
+----------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+        Start counter section css
+----------------------------------------------------------*/
+.counter-section{
+    width:100%;
+    background-image: url(../images/counter-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+.counter-section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000000bd;
+	left: 0;
+	top: 0;
+}
+.counter-content{
+    text-align: center;
+}
+.counter-content .conuter-icon{
+    font-size: 30px;
+    color: #C49B66;
+    margin-bottom: 30px;
+}
+.counter-content .conuter-text h2{
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+/*--------------------------------------------------------
+        End counter section css
+----------------------------------------------------------*/
+
+
+/*--------------------------------------------------------
+       Start portfolio section css
+----------------------------------------------------------*/
+.portfolio-item {
+	width: 100%;
+	position: relative;
+	/* overflow: hidden; */
+    display: block;
+    padding: 10px;
+}
+.img-overlay::before {
+	content: "";
+	position: absolute;
+	right: calc(100% - 10px);
+	top: 10px;
+	width: calc(100% - 20px);
+	height: calc(50% - 10px);
+	background-color: transparent;
+	z-index: 99;
+	transition: all 0.4s;
+}
+.img-overlay::after {
+	content: "";
+	position: absolute;
+	left: calc(100% - 10px);
+	bottom: 10px;
+	width: calc(100% - 20px);
+	height: calc(50% - 10px);
+	background-color: transparent;
+	z-index: 99;
+	transition: all 0.4s;
+}
+.portfolio-item:hover .img-overlay::after {
+    left: 10px;
+    background-color: #fff;
+}
+.portfolio-item:hover .img-overlay::before {
+    right: 10px;
+    background-color: #fff;
+}
+
+.item-img{
+    width:100%;
+}
+.item-img img{
+    width:100%;
+    height: 100%;
+}
+.img-overlay {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 98%;
+	height: 98%;
+	text-align: center;
+	z-index: 999;
+	overflow: hidden;
+}
+
+.portfolio-item:hover .overlay-icon, .portfolio-item:hover .overlay-text{
+    visibility: visible;
+    transition: all 0.4s;
+}
+.portfolio-item:hover .overlay-text h6{
+    margin-bottom: 5px;
+}
+.portfolio-item:hover .overlay-text h5{}
+.overlay-text {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+    width: 100%;
+    position: absolute;
+    z-index: 9999;
+    visibility: hidden;
+}
+.overlay-text h6 {
+    color: #C49B66;
+    margin-bottom: 25px;
+}
+.overlay-text h5{
+    color:#333;
+}
+.overlay-icon {
+	position: absolute;
+	bottom: 10px;
+	right: 22px;
+	color: #C49B66;
+	visibility: hidden;
+	z-index: 999;
+}
+
+.overlay-icon a i{
+	color: #C49B66;
+}
+
+.btn-mix {
+	padding: 9px 29px;
+	border-radius: 5px;
+	border: 1px solid #eee;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    margin:0 5px;
+    color:#333;
+}
+.btn-mix:hover{
+    background-color: #C49B66;
+    color:#fff;
+
+}
+/*---------------------------------------------------------
+       End portfolio section css
+----------------------------------------------------------*/
+
+
+/*---------------------------------------------------------
+      Start Testimonials section css
+----------------------------------------------------------*/
+.testimonial-section{
+    width:100%;
+    background-image: url(../images/testimonial-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.testimonial-section::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #0b0a0ac7;
+}
+.testimonial-section .section-title h4::after {
+	content: '';
+	width: 100%;
+	height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.testimonial-section .section-title h6 i{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid #fff;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.slider-area p {
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: -11px;
+}
+.slider-area .slider-item{
+    max-width: 960px !important;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.feadback-person {
+	margin-top: 27px;
+	margin-left: 6px;
+	margin-bottom: 10px;
+}
+.feadback-person h5 {
+	position: relative;
+	margin-right: 12px;
+	font-size: 18px;
+}
+.feadback-person h5::after {
+	content: "";
+	position: absolute;
+	height: 16px;
+	width: 1.2px;
+	background-color: #fff;
+	bottom: 11px;
+	right: -10px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+	width: 9px;
+	height: 9px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+	background: #C49B66;
+}
+/*---------------------------------------------------------
+      End Testimonials section css
+----------------------------------------------------------*/
+
+
+/*---------------------------------------------------------
+      Start Blog Post section css
+----------------------------------------------------------*/
+
+
+.card img{
+    border-radius:0 !important;
+}
+.card-body ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-body ul li{
+    font-size:13px;
+}
+.blog-btn {
+	display: inline-block;
+	color: #C49B66 !important;
+	font-size: 13px;
+}
+.card-deck{
+    max-width:1140px;
+    width:100%;
+    margin:0 auto;
+}
+
+
+/*---------------------------------------------------------
+      Start Blog Post section css
+----------------------------------------------------------*/
+
+
+/*---------------------------------------------------------
+     Start Contact section css
+----------------------------------------------------------*/
+.contact-section{
+    width:100%;
+    background-image: url(../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.contact-section::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #000000cf;
+	left: 0;
+	top: 0;
+}
+.contact-section .section-title h4::after {
+	content: '';
+	width: 100%;
+	height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+.contact-section form input[type="text"], .contact-section form input[type="email"], .contact-section form textarea {
+	width: 100% !important;
+	border: 1px solid rgba(255, 255, 255, 0.1) !important;
+	padding: 10px !important;
+	background: rgba(10, 10, 10, 0.4) !important;
+	color: #fff;
+	margin-bottom: 33px !important;
+	outline: 0 !important;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    outline: 0 none !important;
+    border-color: transparent !important;
+    box-shadow: unset !important;
+}
+textarea{
+    height:170px !important;
+}
+
+.submit-button {
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px 35px;
+	margin-left: 14px;
+	border: 1px solid#C49B66;
+	color: #fff;
+	display: inline-block;
+	transition: all .5s;
+}
+.submit-button:hover {
+    background: #C49B66;
+    color:#fff;
+    opacity: 1 !important;
+}
+
+.contact-icon i {
+	font-size: 25px;
+	color: #C49B66;
+	font-weight: 600;
+	margin-right: 31px;
+	position: relative;
+	margin-top: 4px;
+}
+.contact-icon i::after {
+	content: "";
+	position: absolute;
+	width: 1px;
+	height: 36px;
+	background: #C49B66;
+	right: -19px;
+	top: -4px;
+}
+.contact-details h6 {
+	color: #fff;
+	font-size: 15px;
+}
+.contact-details a {
+	color: #fff;
+	display: inline-block;
+	font-size: 13px;
+}
+.contact-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    margin-top: 43px;
+}
+/*---------------------------------------------------------
+     Start Contact section css
+----------------------------------------------------------*/
+
+
+/*---------------------------------------------------------
+    Start Footer section css
+----------------------------------------------------------*/
+.footer-section {
+    width:100%;
+    background-color: #111;
+}
+.footer-section p{
+    font-size:13px;
+}
+/*---------------------------------------------------------
+    Start Footer section css
+----------------------------------------------------------*/
+
+.navbar-toggler {
+	background-color:#fff !important; 
+}
+/*---------------------------------------------------------
+    Responsive
+----------------------------------------------------------*/
+@media(max-width:991px){
+    #myNav {
+        background: #fff;
+        position: absolute;
+        /* left: 0px; */
+        top: 57px;
+        right: 50%;
+        border-bottom: 1px solid #6666662e;
+        text-align: center;
+        max-width: 789px;
+        width: 100%;
+        margin: 0 auto;
+        transform: translateX(50%);
+    }
+    .is-sticky #myNav{}
+    #myNav ul li{
+        margin-left:20px;
+    }
+    #myNav ul li a {
+        color: #000 !important;
+        display: inline-block;
+    }
+    h1{
+        font-size:36px;
+        line-height:48px;
+    }
+}
+
