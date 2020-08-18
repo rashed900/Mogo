@@ -482,12 +482,18 @@ a{
 /*************************************************************
 *******************  START  CLIENT FEADBACK  SECTION  ********
 **************************************************************/
+.client-feadback {
+	background-color: #dddddd63;
+	padding: 35px 0;
+}
 .feadback-text{
 	padding-left:65px;
 }
-.feadback-text P{
-	line-height: 26px;
+.feadback-text P {
+	line-height: 27px;
 	font-style: italic;
+	font-size: 17px;
+	margin-top: 11px;
 }
 .feadback-text h4 {
 	position: relative;
@@ -505,8 +511,61 @@ a{
 	top: 50%;
 	transform: translateY(-50%);
 }
+.unslider-arrow.prev {
+	left: -60px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.unslider-arrow.next {
+	right: -60px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.unslider-nav ol li{
+	display: none;
+}
 /*************************************************************
 *******************   END CLIENT FEADBACK  SECTION   *********
+**************************************************************/
+
+/*************************************************************
+*******************  START MEET OUR TEAM   SECTION   *********
+**************************************************************/
+.single-team-content {
+	text-align: center;
+	margin-top: 30px;
+}
+.single-team-content p {
+	font-style: italic;
+	margin-top: 6px;
+	font-size: 14px;
+}
+.single-team.about-item-overlay{
+	position: relative;
+}
+.single-team .about-item-overlay .about-item-overlay-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.single-team .about-item-overlay-icon i {
+	font-size: 30px !important;
+	color: #F38181 !important;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	background: #FCE389;
+	transition: .5s all;
+	margin-right: -2px;
+}
+.single-team .about-item-overlay-icon i:hover{
+	color:#fff !important;
+	background-color:#F38181;
+}
+/*************************************************************
+*******************  END MEET OUR TEAM   SECTION   ***********
 **************************************************************/
 
 /*************************************************************

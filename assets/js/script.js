@@ -6,4 +6,14 @@ $(document).ready(function(){
 
     //scrollbar js
     $(".card-body p").mCustomScrollbar();
+
+   //unslider
+   $('.feadback').unslider({
+    nav: true,
+    arrows:{
+        prev: '<a class="unslider-arrow prev"><i class="fas fa-chevron-left"></i></a>',
+        next: '<a class="unslider-arrow next"><i class="fas fa-chevron-right"></i></a>',
+    }
+    
+   });
 });
