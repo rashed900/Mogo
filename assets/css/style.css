@@ -484,7 +484,7 @@ a{
 **************************************************************/
 .client-feadback {
 	background-color: #dddddd63;
-	padding: 35px 0;
+	padding: 50px 0;
 }
 .feadback-text{
 	padding-left:65px;
@@ -523,6 +523,10 @@ a{
 }
 .unslider-nav ol li{
 	display: none;
+}
+.feadback-padding {
+	padding-left: 8px !important;
+	padding-top: 9px !important;
 }
 /*************************************************************
 *******************   END CLIENT FEADBACK  SECTION   *********
@@ -569,8 +573,82 @@ a{
 **************************************************************/
 
 /*************************************************************
+*******************  START TESTIMONIAL SECTION     ***********
+**************************************************************/
+.testimonial-section{
+	padding:50px 0;
+	background-color: #dddddd63;
+}
+.owl-carousel .owl-item img {
+	display: inline-block;
+	width: unset !important;
+	margin: 0 auto;
+}
+/*************************************************************
+*******************  END TESTIMONIAL SECTION       ***********
+**************************************************************/
+
+/*************************************************************
+*******************  START OUR WORK SECTION        ***********
+**************************************************************/
+.sinle-work{
+	width:100%;
+	transition: .5s all !important;
+}
+.single-work-img{
+	width:100%;
+	position: relative;
+	
+}
+.single-work-overlay{
+	position: absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	
+	
+}
+.single-work-content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+	visibility: hidden;
+	
+	
+}
+.sinle-work:hover .single-work-content{
+	visibility: visible;
+	transition:.5s all;
+}
+.single-work-content h6 {
+	color: #fff;
+	margin-bottom: 9px;
+}
+.single-work-content p {
+	font-style: italic;
+	margin-top: 6px;
+	font-size: 14px;
+	color:#fff !important
+}
+.sinle-work:hover .single-work-overlay{
+	background-image: linear-gradient(180deg, rgba(244,140,131,.9) 0%, rgba(252,227,137,.9) 100%);
+	transition: .5s all !important;
+}
+
+/*************************************************************
+*******************  END OUR WORK SECTION          ***********
+**************************************************************/
+
+
+
+/*************************************************************
 *************	   START FOOTER SECTION	    	**************
 **************************************************************/
+
 /*************************************************************
 *************	   END FOOTER SECTION	    	**************
 **************************************************************/

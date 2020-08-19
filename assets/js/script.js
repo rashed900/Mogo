@@ -16,4 +16,25 @@ $(document).ready(function(){
     }
     
    });
+
+   //testimonial slider
+   $('.testimonial-slider').owlCarousel({
+    loop:true,
+    items:6,
+    autoplay:true,
+    autoplayTimeout:3000,
+    slideBy:2,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+})
 });
