@@ -643,6 +643,125 @@ a{
 *******************  END OUR WORK SECTION          ***********
 **************************************************************/
 
+/*************************************************************
+*******************  START HAPPY CLIENT  SECTION   ***********
+**************************************************************/
+.happy-client-section{
+	background-image: url('../images/happy-client/happy-client-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+.happy-client-section::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: #fffffff7;
+	opacity: .8;
+}
+.happy-client-area{
+	width:100%;
+	position: relative;
+	z-index: 9;
+}
+.happy-client-area .client-img img{
+	width:100%;
+}
+.happy-client-area .happy-client-content{}
+.happy-client-area .happy-client-content h6{
+	font-size:14px;
+	color:#333333;
+}
+.happy-client-area .happy-client-content .sub-heading{
+	font-style: italic;
+	margin-top: 6px;
+	font-size: 15px;
+	position: relative;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+.happy-client-area .happy-client-content .sub-heading::before {
+	content: "";
+	position: absolute;
+	width: 70px;
+	height: 3px;
+	background-color: #ff9999;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 42px;
+}
+.happy-client-area .happy-client-content .pera p{
+	font-style: normal;
+	line-height: 23px;
+	/* letter-spacing: 1px; */
+	font-size: 15px;
+	padding-right:15px;
+}
+.mt-75{
+	margin-top:75px;
+}
+.sinlge-blog .card {
+	border: 0px !important;
+	border-radius: 0px !important;
+}
+.card-img, .card-img-top {
+	border-top-left-radius:0px !important;
+	border-top-right-radius:0px !important;
+}
+.card-image{
+	position: relative;
+}
+.blog-date {
+	width: 65px;
+	height: 70px;
+	background: #95E1D4;
+	text-align: center;
+	padding: 7px 0 14px 0;
+	position: absolute;
+	bottom: 0;
+	left: -12px;
+}
+
+.blog-date .card-body h2{
+	color:#fff;
+}
+.blog-date .blog-text{
+	color:#fff;
+	margin-bottom:20px !important;
+	
+}
+
+/* blog icon */
+.blog-icon{}
+.blog-icon ul {
+	overflow: hidden;
+	border-top: 1px solid #dddddd;
+	padding-top: 20px;
+}
+.blog-icon ul li {
+	float: left;
+	margin-right: 19px;
+}
+.blog-icon ul li a {
+	font-size: 14px !important;
+	color: #333333 !important;
+	font-weight: 200 !important;
+	font-style:italic;
+}
+.blog-icon ul li i {
+	color: #95E1D4;
+	font-size: 16px;
+	margin-right: 5px;
+}
+/*************************************************************
+*******************  END HAPPY CLIENT  SECTION     ***********
+**************************************************************/
+
 
 
 /*************************************************************
